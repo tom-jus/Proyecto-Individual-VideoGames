@@ -1,0 +1,97 @@
+@font-face {
+    font-family: '8bitOperatorPlus8';
+    src: url(../../assets/8bitOperatorPlus8-Bold.e59b6eb7.ttf);
+  }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    margin: 30px;
+    background: rgba(255, 255, 255, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(18px);
+    border-radius: 20px;
+    font-family: '8bitOperatorPlus8';
+    color: white;
+    text-shadow: 2px 2px 3px black;
+    padding: 10px;
+}
+
+.card::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(124deg,
+            #b6ceee,
+            #8886f6,
+            #4c7fec,
+            #5349e0,
+            #8e58fb,
+            #da9eee,
+            #e787e0,
+            #c860d1,
+            #e06ceb);
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(10px);
+    animation: move 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.card:hover::before {
+    opacity: 1;
+    border-radius: 30px;
+}
+
+.card::after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.image {
+    width: "30%";
+    margin: "20px";
+}
+
+.cardImage {
+    height: 250px;
+    width: 300px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+
+}
+
+.name {
+    text-decoration: none;
+    color:  white;
+}

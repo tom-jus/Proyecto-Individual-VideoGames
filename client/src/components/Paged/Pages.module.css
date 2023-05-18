@@ -1,0 +1,30 @@
+@font-face {
+  font-family: '8bitOperatorPlus8';
+  src: url(../../assets/8bitOperatorPlus8-Bold.e59b6eb7.ttf);
+}
+
+.pagedButtonsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+.btn {
+  margin: 1%;
+  background-color: transparent;
+  border-radius: 70%;
+  height: 40px;
+  width: 40px;
+  font-family: '8bitOperatorPlus8';
+  font-size: 23px;
+  color: white;    
+  border: 1px solid white;
+  cursor: pointer;
+
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.281);
+}
+

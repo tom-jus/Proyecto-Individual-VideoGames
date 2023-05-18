@@ -1,0 +1,94 @@
+@font-face {
+    font-family: '8bitOperatorPlus8';
+    src: url(../../assets/8bitOperatorPlus8-Bold.e59b6eb7.ttf);
+}
+
+
+.backgroundImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-image: url(https://images3.alphacoders.com/127/127957.jpg);
+    height: 100%;
+    padding-bottom: 44px;
+}
+
+.containerDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 130%;
+    border-radius: 40px;
+    background: rgba(200, 200, 231, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(8.5px);
+    -webkit-backdrop-filter: blur(8.5px);
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 30px 0;
+}
+
+img {
+    border-radius: 20px;
+    height: 300px;
+    width: 500px;
+    margin: 10px;
+}
+
+.backgroundImage h1 {
+    font-family: '8bitOperatorPlus8';
+    color: violet;
+}
+
+.containerDetails h3 {
+    font-family: '8bitOperatorPlus8';
+    color: violet;
+    margin: 10px;
+}
+
+.containerDetails h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin: 10px;
+}
+
+.containerDetails p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
+.deleteGame{
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 20px;
+   border-radius: 7px;
+   background-color: rgb(226, 43, 183);
+   border: solid white;
+   border-style: ridge white;
+    
+}
+
+.deleteGame:hover{
+    background-color: rgb(140, 25, 140);
+    color:white;
+}
+
+.backHome {
+    font-family: '8bitOperatorPlus8';
+    border-radius: 5px;
+    border:2px solid white;
+    padding: 10px;
+    background-color: violet;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+}

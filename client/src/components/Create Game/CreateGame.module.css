@@ -1,0 +1,109 @@
+ 
+@font-face {
+    font-family: '8bitOperatorPlus8';
+    src: url(../../assets/8bitOperatorPlus8-Bold.e59b6eb7.ttf);
+}
+
+.backgroundImage {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url(https://images3.alphacoders.com/127/127957.jpg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+h2 {
+    margin: 0;
+    font-family: '8bitOperatorPlus8';
+    margin-bottom: 15px;
+    color:violet;
+    padding-top: 15px;
+}
+
+.container {
+    border: 1px solid white;
+    background-color: rgba(204, 142, 204, 0.493);
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: '8bitOperatorPlus8';
+    border-radius: 10px;
+    padding-bottom: 15px; 
+    margin-bottom: 15px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    min-height: 80vh; 
+}
+
+input {
+    border-radius: 5px;
+    border:none;
+    padding: 5px;
+}
+
+select {
+    border-radius: 5px;
+    border:none;
+    padding: 5px;
+}
+
+
+.createGameBtn, .btnHome {
+    font-family: '8bitOperatorPlus8';
+    border-radius: 5px;
+    border:2px solid white;
+    padding: 10px;
+    background-color: violet;
+    color: white;
+    cursor: pointer;
+}
+
+.createGameBtn:hover, .btnHome:hover {
+    background-color: rgba(238, 130, 238, 0.527);
+}
+
+.createGameBtn {
+    margin-top: 15px;
+}
+
+.btnHome {
+    margin-bottom: 20px;
+}
+
+.deleteBtn {
+    border: 1px solid white;
+    margin-left: 20px;
+    background-color: violet;
+    color: white;
+    border-radius: 100%;
+    padding: 0 5px;
+    cursor: pointer;
+
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    margin-top: 10px
+}
+
+p {
+    color:white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+  

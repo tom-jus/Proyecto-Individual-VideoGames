@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', 
+  monospace; 
+}
+
+   p.danger {
+  color: #f38989;
+  font-family: 'Bungee'; 
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5px;
+
+}
+
+input.danger {
+  border: 2px solid red;
+  border-radius: 4px;
+}
+
+select.danger {
+  border: 2px solid red;
+  border-radius: 4px;
+}
