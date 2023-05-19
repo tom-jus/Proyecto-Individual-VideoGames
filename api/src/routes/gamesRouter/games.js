@@ -10,7 +10,6 @@ const {
   editGame,
   deleteGame
 } = require('../../controllers/videoGamesController.js');
-// const Videogame = require('../../models/Videogame.js')
 
 router.get('/', async (req, res) => {
   const { name } = req.query;
