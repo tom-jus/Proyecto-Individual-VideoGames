@@ -161,6 +161,4 @@ export const deleteStates = () => {
     }
 }
 
-export const searchGameByPlatforms = () => { }
-export const modifyVideoGame = (payload) => { }
 

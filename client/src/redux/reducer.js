@@ -16,10 +16,10 @@ import {
 } from './action-types';
 
 const initialState = {
-    videogames: [], // este estado se llama ni bien se ejecuta la app
-    getAllVideoGames: [], //LA COPIA DONDE FILTRO PARA PISAR VIDEOGAMES Y MOSTRAR
+    videogames: [], // este estado se llama cuando se ejecuta la app
+    getAllVideoGames: [],
     getAllVideoGames2: [],
-    genres: [], // este estado se llama ni bien se ejecuta la app
+    genres: [], // este estado se llama cuando se ejecuta la app
     details: [],
 };
 
@@ -59,7 +59,7 @@ function rootReducer(state = initialState, action) {
                 genres: payload,
             };
         case ORDER_ALPHABETICALLY:
-            const sortedArr = payload === 'asc' ?
+            const order = payload === 'asc' ?
                 state.videogames.sort((a, b) => {
                     let nameA = a.name.toLowerCase();
                     let nameB = b.name.toLowerCase();
@@ -86,9 +86,9 @@ function rootReducer(state = initialState, action) {
                 });
             return {
                 ...state,
-                videogames: sortedArr,
-                getAllVideoGames: sortedArr,
-                getAllVideoGames2: sortedArr,
+                videogames: order,
+                getAllVideoGames: order,
+                getAllVideoGames2: order,
             };
         case ORDER_BY_RAITING:
             const ratingFiltered = payload === 'max' ?
@@ -171,10 +171,7 @@ function rootReducer(state = initialState, action) {
         default:
             return state;
     }
-
-
 }
-
 
 
 export default rootReducer;
