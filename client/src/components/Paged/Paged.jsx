@@ -7,6 +7,8 @@ export default function Paged(props) {
 
   let pageNumbers = [];
 
+  // Math.ceil() devuelve el entero mayor o igual más próximo a un número dado.
+  // La prop allVideoGames en este caso es su longitud en el state
   for (let i = 1; i <= Math.ceil(allVideoGames/videoGamesPP); i++) {
     pageNumbers.push(i);
   };

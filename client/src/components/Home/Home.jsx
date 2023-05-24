@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { NavLink } from "react-router-dom";
 import Card from "../Card/Card";
 import Loading from "../Loading/Loading.jsx";
 import styles from './Home.module.css';
+import Paged from "../Paged/Paged.jsx";
 
 import {
     getAllVideoGames,
@@ -16,7 +17,6 @@ import {
     deleteStates,
 } from '../../redux/actions.js';
 
-import Paged from "../Paged/Paged.jsx";
 
 const Home = () => {
 
@@ -25,7 +25,7 @@ const Home = () => {
     const allVideogames = useSelector((state) => state.videogames);
     const genres = useSelector((state) => state.genres);
 
-    // Estado de la página: 
+    // Estado de la página
     const [currentPage, setCurrentPage] = useState(1);
     const [videoGamesPP,] = useState(15);
 
@@ -36,20 +36,19 @@ const Home = () => {
 
     useEffect(() => {
         dispatch(getGenres())
-        let videoGame = allVideogames && allVideogames;
-        if (videoGame.length === 0) {
-            dispatch(getAllVideoGames())
+        // let videoGame = allVideogames;
+        if (allVideogames.length === 0) {
+            dispatch(getAllVideoGames());
         }
         setCurrent(
             allVideogames.slice(indexOfFirstVideoGame, indexOfLastVideoGame)
-        )
+        );
     }, [allVideogames, indexOfFirstVideoGame, indexOfLastVideoGame, dispatch]);
 
     const paged = (pageNumbers) => {
         setCurrentPage(pageNumbers);
     };
     
-    const [isHiden, setIsHiden] = useState(false);
     const [search, setSearch] = useState({ // Input de busqueda
         name: '',
     });
